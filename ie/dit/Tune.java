@@ -25,6 +25,11 @@ public class Tune
 
 	}
 
+	 public Player void play()
+	 {
+	 	System.out.println(notation);
+	 }
+
 }
 
 	
