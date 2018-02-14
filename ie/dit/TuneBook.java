@@ -11,7 +11,7 @@ public class TuneBook
 		loadtunes();
 	}
 
-	public String toString();
+	public String toString()
 	{
 		StringBuffer sb = new StringBuffer();
 		for(String tune:tunes)
@@ -20,6 +20,17 @@ public class TuneBook
 		}
 
 		return sb.toString();
+	}
+
+	public Tune findTune(String title)
+	{
+		for(String tune:tunes)
+		{
+			if(tune.contains(title))
+			{
+				return title;
+			}
+		}
 	}
 
 	public void loadtunes();
