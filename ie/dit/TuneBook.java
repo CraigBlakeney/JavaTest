@@ -13,7 +13,13 @@ public class TuneBook
 
 	public String toString();
 	{
-		
+		StringBuffer sb = new StringBuffer();
+		for(String tune:tunes)
+		{
+			sb.append(x + title + altTitle);
+		}
+
+		return sb.toString();
 	}
 
 	public void loadtunes();
