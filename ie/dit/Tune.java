@@ -12,6 +12,19 @@ public class Tune
 	private String altTitle;
 	private String notation;
 
+	public String toString()
+	{
+			
+	    StringBuffer sb = new StringBuffer();
+	    for(String word:words)
+	    {
+	        sb.append(x + "," + title + "," + altTitle);
+	    }
+
+	    return sb.toString();
+
+	}
+
 }
 
 	
